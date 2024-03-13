@@ -4,23 +4,17 @@ class Solution {
             return;
         }
         
-        int left = 0; // Pointer to track non-zero elements
-        int right = 0; // Pointer to iterate through the array
-        
-        // Iterate through the array
-        while (right < nums.length) {
-            // If the current element is non-zero
-            if (nums[right] != 0) {
-                // Swap the non-zero element with the left pointer element
-                int temp = nums[left];
-                nums[left] = nums[right];
-                nums[right] = temp;
-                
-                // Move the left pointer to the next position
+      int right=0,left=0,temp=0;
+        while(right<nums.length)
+        {
+            if(nums[right]!=0)
+            {
+             temp=nums[right];
+                nums[right]=nums[left];
+                nums[left]=temp;
                 left++;
             }
-            
-            // Move the right pointer to the next position
+                
             right++;
         }
         
