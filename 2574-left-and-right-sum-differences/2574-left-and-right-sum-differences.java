@@ -28,13 +28,7 @@ class Solution {
         }
         for(int m=0;m<nums.length;m++)
         {
-            int temp=leftSum[m]-rightSum[m];
-            if(temp<0)
-            {
-                check[m]=temp*(-1);
-            }
-            else
-                check[m]=temp;
+            check[m]=Math.abs(leftSum[m]-rightSum[m]);
         }
         return check;
     }
