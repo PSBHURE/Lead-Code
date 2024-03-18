@@ -1,12 +1,9 @@
 class Solution {
     public int differenceOfSum(int[] nums) {
        int esum=0,dsum=0,r=0,temp=0;
-        for(int i=0;i<nums.length;i++)
-        {
-            esum+=nums[i];
-        }
         for(int j=0;j<nums.length;j++)
         {
+             esum+=nums[j];
             if(nums[j]<10)
                 dsum+=nums[j];
             else
