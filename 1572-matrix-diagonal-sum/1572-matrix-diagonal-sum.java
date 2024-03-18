@@ -1,17 +1,32 @@
+
 class Solution {
     public int diagonalSum(int[][] mat) {
-        int sum=0;
-        for(int i=0;i<mat.length;i++)
-        {
-            for(int j=0;j<mat[0].length;j++)
-            {
-                int x=(mat[i].length-1)-i;
-               if(i==j || j==x)
-                    sum+=mat[i][j];
-               // if()
-                   // sum+=mat[i][j];
-            }
+        
+        // side length
+        int n = mat.length;
+        
+        // mid point index
+        int mid = n / 2;
+        
+        // summation of diagonal element
+        int summation = 0;
+        
+        for( int i = 0 ; i < n ; i++ ){
+            
+            // primary diagonal
+            summation += mat[i][i];
+            
+            // secondary diagonal
+            summation += mat[n-1-i][i];
         }
-        return sum;
+        
+        
+        if( n % 2 == 1 ){
+            
+            // remove center element (repeated) on odd side-length case
+            summation -= mat[mid][mid];
+        }
+        
+        return summation;
     }
 }
