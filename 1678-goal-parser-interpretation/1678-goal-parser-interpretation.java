@@ -1,9 +1,10 @@
 class Solution {
     public String interpret(String command) {
         char[] arr=command.toCharArray();
-        StringBuffer temp=new StringBuffer();
-        if((arr.length==1)&& (arr[0]=='G'||arr[0]=='a'||arr[0]=='l'))
+         if((arr.length==1)&& (arr[0]=='G'||arr[0]=='a'||arr[0]=='l'))
             return String.valueOf(arr);
+        StringBuffer temp=new StringBuffer();
+       
         for(int i=0;i<arr.length-1;i++)
         {
             int j=i+1;
