@@ -1,8 +1,6 @@
 class Solution {
     public int findGCD(int[] nums) {
        Arrays.sort(nums);
-        for(int x:nums)
-            System.out.print(x+" ");
        int min=nums[0],max=nums[nums.length-1];
         if(min==max)
             return min;
