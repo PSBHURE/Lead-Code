@@ -2,8 +2,6 @@ class Solution {
     public int findGCD(int[] nums) {
        Arrays.sort(nums);
        int min=nums[0],max=nums[nums.length-1];
-        if(min==max)
-            return min;
        int m=max;
         for(int i=1;i<=max;i++)
         {
