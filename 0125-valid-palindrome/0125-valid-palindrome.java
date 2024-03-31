@@ -7,7 +7,8 @@ class Solution {
         List<Character>list=new ArrayList<>();
         for(int i=0;i<arr.length;i++)
         {
-            if((arr[i]>='a' && arr[i]<='z')||(arr[i]>='A' && arr[i]<='Z')||(arr[i]>='0' && arr[i]<='9'))
+           /* if((arr[i]>='a' && arr[i]<='z')||(arr[i]>='A' && arr[i]<='Z')||(arr[i]>='0' && arr[i]<='9'))*/
+            if(Character.isLetterOrDigit(arr[i]))
             list.add(Character.toLowerCase(arr[i]));
             
             else
