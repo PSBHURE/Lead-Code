@@ -10,12 +10,6 @@ class Solution {
             set.add(ch1);
         }
         
-        List<Character> list=new ArrayList<>();
-        for(char ch:set)
-        {
-            list.add(ch);
-        }
-        
         Map<Character,Integer>map=new HashMap<>();
         for(char ch2:arr1)
         {
