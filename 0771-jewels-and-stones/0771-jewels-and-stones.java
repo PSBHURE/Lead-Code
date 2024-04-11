@@ -23,7 +23,7 @@ class Solution {
         }
         for(Map.Entry<Character,Integer>entry:map.entrySet())
         {
-            if(list.contains(entry.getKey()))
+            if(set.contains(entry.getKey()))
                 count+=entry.getValue();
                 
         }
