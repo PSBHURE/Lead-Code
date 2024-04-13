@@ -1,14 +1,14 @@
 class Solution {
     public String finalString(String s) {
-        char[] arr=s.toCharArray();
+        
         StringBuffer temp=new StringBuffer();
-        for(int i=0;i<arr.length;i++)
+        for(int i=0;i<s.length();i++)
         {
-            if(arr[i]=='i')
+            if(s.charAt(i)=='i')
                 temp.reverse();
             else
             {
-                temp.append(arr[i]);
+                temp.append(s.charAt(i));
             }
         }
         return new String(temp);
